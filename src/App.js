@@ -19,7 +19,7 @@ function App() {
 
   const AppStyles = contactFormOpen ?  styles.AppNoScroll : '';
   return (
-    <>
+    <div>
       <Analytics />
       <div className={AppStyles}>
       
@@ -43,7 +43,7 @@ function App() {
             <button onClick={openForm} className={styles.cta}>Join our Beta Today!</button></footer>
 
 
-      </>
+    </div>
   );
     
 }
