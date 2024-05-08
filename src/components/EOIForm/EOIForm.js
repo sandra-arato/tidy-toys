@@ -39,7 +39,7 @@ const EOIForm = ({onClose}) => {
       <div className={styles.form}>
 
       <h2>Register your interest</h2>
-        <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe4dvkvkXLOK046495OdXKnmDdVdcvf3tbwEWTjBtJUKipgjA/formResponse" method="POST">
+        <form  target="_blank" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe4dvkvkXLOK046495OdXKnmDdVdcvf3tbwEWTjBtJUKipgjA/formResponse" method="POST">
         <button className={styles.closeButton} onClick={handleClose}>Close</button>
       <label>
         Name:
