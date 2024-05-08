@@ -5,9 +5,6 @@
   --dark-copy: rgb(73, 72, 72);
 }
 
-.App {
-  text-align: center;
-}
 .AppNoScroll {
   overflow: hidden;
   max-height: 100vh;

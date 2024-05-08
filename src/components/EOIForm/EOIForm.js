@@ -30,22 +30,50 @@ const EOIForm = ({onClose}) => {
     updatedChildrenAges[index] = event.target.value;
     setChildrenAges(updatedChildrenAges);
   };
+  const handleClose = () => {
+    onClose();
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
-  };
+    console.log('items');
 
-  const handleClose = () => {
-    onClose();
+    const formData = {
+      'entry.425802846': name,
+      'entry.518751739': phoneNumber,
+      'entry.789529996': numberOfChildren,
+      'entry.1240337038': childrenAges.join(','),
+      'entry.623523051': postcode,
+      'fvv': '1',
+      'pageHistory': 0,
+      'submissionTimestamp': Date.now(),
+    };
+
+    fetch('https://docs.google.com/forms/u/1/d/e/1FAIpQLSe4dvkvkXLOK046495OdXKnmDdVdcvf3tbwEWTjBtJUKipgjA/formResponse', {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      // Handle success response here
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      // Handle error here
+    });
   }
 
   return (
     <div className={styles.modal}>
       <div>
-                <button className={styles.closeButton} onClick={handleClose}>Close</button>
+
       <h2>Register your interest</h2>
-      <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
+        <button className={styles.closeButton} onClick={handleClose}>Close</button>
       <label>
         Name:
         <input type="text" value={name} onChange={handleNameChange} />

@@ -17,7 +17,7 @@ function App() {
     }
   }
 
-  const AppStyles = contactFormOpen ?  styles.AppNoScroll : styles.App;
+  const AppStyles = contactFormOpen ?  styles.AppNoScroll : '';
   return (
     <>
       <Analytics />
