@@ -89,7 +89,6 @@ main {
   font-weight: 600;
  }
 
-
 section {
     display: flex;
     flex-direction: column;
@@ -134,4 +133,44 @@ section {
 
 .cta:hover {
   background-color: #f2f1ec;
+}
+
+@media (max-width: 768px) {
+
+  .appHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    h1 {
+      max-width: 100%;
+      width: 34rem;
+    }
+
+    span {
+      max-width: 22rem;
+    }
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .logo {
+    width: 24rem;
+  }
 }
