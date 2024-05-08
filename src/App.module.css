@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #f2f1ec;
+  --dark-copy: rgb(106, 103, 103);
+}
+
+.App {
+  text-align: center;
+}
+.hero {
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+  height: 28rem;
+  img {
+      margin: 0 auto;
+        width: 50%;
+        height: 100%;
+        /* Add this */
+        object-fit: cover;
+        /* Add this */
+  }
+}
+
+.appHeader {
+  background-color: #f8a997;
+  max-width: 80%;
+  margin: 0 auto;
+  height: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 2rem;
+  margin: 6rem auto;
+
+  h1 {
+    display: inline-flex;
+    width: 50%;
+    max-width: 40rem;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+  }
+
+}
+
+.App-link {
+  color: #61dafb;
+}

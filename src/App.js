@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './hero.jpg';
+import styles from './App.module.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-         <h1>Introducing Tidy Toys: The Eco-Friendly Toy Rotation Service for Busy Moms</h1>
+      <div className={styles.logo}>Tidy Toys</div>
+      <header className={styles.appHeader}>
+        <div  className={styles.hero}><img src={logo} alt="Child playing on his own with montessori toys" /></div>
+
+        <h1>The Eco-Friendly Toy Rotation Service for Busy Moms</h1>
       </header>
       <main>
         <section>
