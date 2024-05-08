@@ -36,7 +36,7 @@ const EOIForm = ({onClose}) => {
 
   return (
     <div className={styles.modal}>
-      <div>
+      <div className={styles.form}>
 
       <h2>Register your interest</h2>
         <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe4dvkvkXLOK046495OdXKnmDdVdcvf3tbwEWTjBtJUKipgjA/formResponse" method="POST">
@@ -60,8 +60,9 @@ const EOIForm = ({onClose}) => {
         Number of Children:
         <input type="number" value={numberOfChildren} name="entry.789529996" onChange={handleNumberOfChildrenChange} />
       </label>
-      <br />
-      {Array.from({ length: numberOfChildren }, (_, index) => (
+          <br />
+      <div className={styles.ages}>
+                {Array.from({ length: numberOfChildren }, (_, index) => (
         <div key={index}>
           <label>
             Child {index + 1} Age:
@@ -70,11 +71,13 @@ const EOIForm = ({onClose}) => {
           <br />
         </div>
       ))}
+          </div>
+
         <input type="hidden" name="fvv" value="1" />
           <input type="hidden" name="entry.1240337038" value={childrenAges.concat(',')} />
           <input type="hidden" name="pageHistory" value="0" />
           <input type="hidden" name="submissionTimestamp" value={Date.now()} />
-      <button type="submit">Submit</button>
+      <button type="submit" className={styles.submit}>Submit</button>
     </form>
       </div>
 

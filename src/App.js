@@ -33,11 +33,16 @@ function App() {
           <Mission />
           <HowTo />
           <Features />
-          <Plans />
-          <button onClick={openForm}>Join our Beta Today!</button>
-          {contactFormOpen ?  (<EOIForm onClose={() => setContactFormOpen(false)} />) : null}
+
+         
       </main>
       </div>
+      {contactFormOpen ? (<EOIForm onClose={() => setContactFormOpen(false)} />) : null}
+      <footer className={styles.footer}>
+                  <Plans />
+            <button onClick={openForm} className={styles.cta}>Join our Beta Today!</button></footer>
+
+
       </>
   );
     

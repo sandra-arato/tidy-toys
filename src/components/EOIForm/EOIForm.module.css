@@ -4,11 +4,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  padding-top: 2rem;
+
+  h2 {
+    margin-top: 1.5rem;
+  }
 
   > div {
     display: flex;
@@ -20,20 +25,42 @@
     form {
       display: flex;
       flex-direction: column;
+      box-sizing: border-box;
+      width: 100%;
     }
   }
-}
 
+  label {
+    text-decoration: uppercase;
+  }
+
+  input {
+    display: flex;
+    box-sizing: border-box;
+    margin: 1rem 0 0.5rem 0;
+    width: 100%;
+    padding: 1rem 0.25rem 0.5rem 0.25rem;
+    font-size: 1.25rem;
+    border-width: 0 0 2px 0;
+  }
+
+}
+.form {
+  display: relative;
+  margin-top: 1rem;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
 .closeButton {
   position: absolute;
-  content: '';
-  top: 10px;
-  right: 10px;
+  top: 2.5rem;
+  right:50%;
   width: 20px;
   height: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0 0 0 1.5rem;
 }
 
 .closeButton::before,
@@ -50,4 +77,30 @@
 
 .closeButton::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.ages {
+  display: flex;
+  flex-direction: row;
+  /* align-items: space-between; */
+
+  input {
+    width: calc(100% - 0.5rem);
+    margin: 1rem auto 0.5rem auto;
+  }
+}
+
+.submit {
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: var(--dark-copy);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
