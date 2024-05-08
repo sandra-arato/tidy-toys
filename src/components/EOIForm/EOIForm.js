@@ -34,64 +34,31 @@ const EOIForm = ({onClose}) => {
     onClose();
   }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('items');
-
-    const formData = {
-      'entry.425802846': name,
-      'entry.518751739': phoneNumber,
-      'entry.789529996': numberOfChildren,
-      'entry.1240337038': childrenAges.join(','),
-      'entry.623523051': postcode,
-      'fvv': '1',
-      'pageHistory': 0,
-      'submissionTimestamp': Date.now(),
-    };
-
-    fetch('https://docs.google.com/forms/u/1/d/e/1FAIpQLSe4dvkvkXLOK046495OdXKnmDdVdcvf3tbwEWTjBtJUKipgjA/formResponse', {
-      method: 'POST',
-      headers: {
-      'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      // Handle success response here
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      // Handle error here
-    });
-  }
-
   return (
     <div className={styles.modal}>
       <div>
 
       <h2>Register your interest</h2>
-        <form onSubmit={handleSubmit}>
+        <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe4dvkvkXLOK046495OdXKnmDdVdcvf3tbwEWTjBtJUKipgjA/formResponse" method="POST">
         <button className={styles.closeButton} onClick={handleClose}>Close</button>
       <label>
         Name:
-        <input type="text" value={name} onChange={handleNameChange} />
+        <input type="text" value={name} name="entry.425802846" onChange={handleNameChange} />
       </label>
       <br />
       <label>
         Phone Number:
-        <input type="text" value={phoneNumber} onChange={handlePhoneNumberChange} />
+        <input type="text" value={phoneNumber} name="entry.518751739" onChange={handlePhoneNumberChange} />
       </label>
       <br />
       <label>
         Postcode:
-        <input type="text" value={postcode} min="1000" max="9999" onChange={handlePostcodeChange} />
+        <input type="text" value={postcode} min="1000" max="9999" name="entry.623523051" onChange={handlePostcodeChange} />
       </label>
       <br />
       <label>
         Number of Children:
-        <input type="number" value={numberOfChildren} onChange={handleNumberOfChildrenChange} />
+        <input type="number" value={numberOfChildren} name="entry.789529996" onChange={handleNumberOfChildrenChange} />
       </label>
       <br />
       {Array.from({ length: numberOfChildren }, (_, index) => (
@@ -103,6 +70,10 @@ const EOIForm = ({onClose}) => {
           <br />
         </div>
       ))}
+        <input type="hidden" name="fvv" value="1" />
+          <input type="hidden" name="entry.1240337038" value={childrenAges.concat(',')} />
+          <input type="hidden" name="pageHistory" value="0" />
+          <input type="hidden" name="submissionTimestamp" value={Date.now()} />
       <button type="submit">Submit</button>
     </form>
       </div>
