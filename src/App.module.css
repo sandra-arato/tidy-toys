@@ -8,7 +8,10 @@
 .App {
   text-align: center;
 }
-
+.AppNoScroll {
+  overflow: hidden;
+  max-height: 100vh;
+}
 h1 {
   display: inline-flex;
   flex-direction: column;
@@ -80,6 +83,7 @@ main {
 
  .appHeader span {
   color: #fff;
+
   max-width: 26rem;
   /* font-size: 1.25rem; */
   text-transform: uppercase;

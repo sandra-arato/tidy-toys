@@ -6,12 +6,22 @@ import Mission from "./components/Mission/Misson";
 import HowTo from "./components/HowTo/HowTo";
 import Features from "./components/Features/Features";
 import Plans from "./components/Plans/Plans";
+import { useState } from "react";
+import EOIForm from "./components/EOIForm/EOIForm";
 
 function App() {
+  const [contactFormOpen, setContactFormOpen] = useState(false);
+  const openForm = () => {
+    if (!contactFormOpen) {
+      setContactFormOpen(true);
+    }
+  }
+
+  const AppStyles = contactFormOpen ?  styles.AppNoScroll : styles.App;
   return (
     <>
       <Analytics />
-      <div className="App">
+      <div className={AppStyles}>
       
       <header className={styles.appHeader}>
         <div  className={styles.hero}><img src={logo} alt="Child playing on his own with montessori toys" label="https://unsplash.com/@paige_cody" /></div>
@@ -24,7 +34,8 @@ function App() {
           <HowTo />
           <Features />
           <Plans />
-        <button>Join our Beta Today!</button>
+          <button onClick={openForm}>Join our Beta Today!</button>
+          {contactFormOpen ?  (<EOIForm onClose={() => setContactFormOpen(false)} />) : null}
       </main>
       </div>
       </>
