@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import logo from './hero.jpg';
 import styles from './App.module.css';
 import About from "./components/About/About";
@@ -21,6 +22,7 @@ function App() {
   return (
     <div>
       <Analytics />
+      <SpeedInsights />
       <div className={AppStyles}>
       
       <header className={styles.appHeader}>
