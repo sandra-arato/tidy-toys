@@ -4,7 +4,7 @@ function About() {
   return (
     <section>
       <h2>About Tidy Toys</h2>
-    Tidy Toys is more than just a toy rotation service – it's a lifeline for busy moms like you. We understand the mental load of juggling family, work, and household responsibilities. That's why we're here to lighten your load by providing a sustainable, convenient, and family-centric toy delivery service.
+        At TidyToys, we understand the challenges of managing toy clutter while keeping your little ones entertained. That's why we've created a hassle-free solution to ensure endless fun without the mess.
       </section>
   );
 }
