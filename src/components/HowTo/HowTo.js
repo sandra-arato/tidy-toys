@@ -25,7 +25,7 @@ function HowTo() {
           <Plan title="Monthly" description="Perfect for trying out our service. Receive a curated selection of 8-10 toys every month." price="$20.90/month" link="https://buy.stripe.com/aEU9Doe963CobZuaEH" />
         </li>
         <li>
-          <Plan title="Fortnightly" description="Ideal for ongoing toy rotation. Enjoy a variety of 8-10 toys delivered fortnightly." price="$34.90/fortnight" link="https://buy.stripe.com/aEUcPAaWUeh2aVq3cg" /></li>
+          <Plan title="Fortnightly" description="Ideal for ongoing toy rotation. Enjoy a variety of 8-10 toys delivered fortnightly." price="$34.90/month" link="https://buy.stripe.com/aEUcPAaWUeh2aVq3cg" /></li>
         <li>
           <Plan title="Weekly" description="For ultimate convenience and variety. Receive weekly 8-10 toy deliveries tailored to your preferences." price="$54.90/month" link="https://buy.stripe.com/7sIg1M4ywgpa5B64gl" />
         </li>
