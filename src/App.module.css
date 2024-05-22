@@ -68,26 +68,36 @@ main {
   color: white;
   padding: 2rem;
   margin: 6rem auto;
+
 }
 
-.appHeader h1 {
+.appHeader > div {
    display: inline-flex;
-   width: 50%;
-   max-width: 22rem;
-   margin-left: 2rem;
-   font-size: 2.5rem;
+   flex-direction: column;
  }
+
+.appheader h1 {
+  width: 50%;
+    max-width: 22rem;
+    margin-left: 2rem;
+    font-size: 2.5rem;
+}
 
  .appHeader span {
   color: #fff;
 
   max-width: 26rem;
-  /* font-size: 1.25rem; */
   text-transform: uppercase;
-  font-size: 0.875rem;
   letter-spacing: 3px;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.625rem;
+  font-family: Fredoka, sans-serif;
  }
+.appHeader .cta {
+  margin-top: 2rem;
+  display: inline-block;
+  max-width: fit-content;
+}
 
 section {
     display: flex;

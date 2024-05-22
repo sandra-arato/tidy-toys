@@ -78,6 +78,7 @@ const EOIForm = ({onClose}) => {
           <input type="hidden" name="pageHistory" value="0" />
           <input type="hidden" name="submissionTimestamp" value={Date.now()} />
       <button type="submit" className={styles.submit}>Submit</button>
+      <p>We only use this info to notify you when we launch in your suburb for your kids' age group.</p>
     </form>
       </div>
 

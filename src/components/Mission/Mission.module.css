@@ -1,18 +1,48 @@
 .mission {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
   ul,
     li {
+      display: flex;
       list-style: none;
       padding: 0;
       margin-top: 0;
+      align-content: flex-start;
+      margin-bottom: 3.5rem;
     }
   
-    span {
-      display: block;
-      text-transform: uppercase;
-      font-size: 0.875rem;
-      letter-spacing: 3px;
-      margin: 1.5rem 0 0.75rem;
-      color: #269894;
-      font-weight: 600;
-    }
+  > span {
+    display: flex;
+    margin: 0 auto;
+  }
+  .feature {
+    display: inline-block;
+    flex-direction: column;
+    max-width: calc(100% - 6rem);
+    margin-left: 1.5rem;
+    span:first-child {
+        display: flex;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        letter-spacing: 3px;
+        margin: 1.5rem 0 0.75rem;
+        color: #637761;
+        font-weight: 600;
+      }
+  }
+
+}
+
+.icon {
+  margin-top: 1.75rem;
+  display: inline-flex;
+  align-self: start;
+  width: 4rem;
+  height: 4rem;
+  fill: #fff;
+  background-color: #b2ae93;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
 }

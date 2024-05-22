@@ -26,10 +26,16 @@ function App() {
       <div className={AppStyles}>
       
       <header className={styles.appHeader}>
-        <div  className={styles.hero}><img src={logo} alt="Child playing on his own with montessori toys" label="https://unsplash.com/@paige_cody" /></div>
+          <div  className={styles.hero}><img src={logo} alt="Child playing on his own with montessori toys" label="https://unsplash.com/@paige_cody" /></div>
+          <div><h1>
+            <div className={styles.logo}>tidytoys</div>
+            <span>The Eco-Friendly Toy Rotation Service for Busy Families</span>
+                    
+          </h1>
+          <a href="#plans" className={styles.cta}>Get my box!</a>
+          </div>
+        </header>
 
-        <h1><div className={styles.logo}>tidytoys</div><span>The Eco-Friendly Toy Rotation Service for Busy Families</span></h1>
-      </header>
       <main>
           <About />
           <Mission />
