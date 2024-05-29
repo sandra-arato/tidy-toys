@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './HowTo.module.css';
 
-const Plan = ({ title, description, price, link }) => {
+const Plan = ({ title, description, price, link, sale }) => {
   return (
     <div className={styles.card}>
       <h3 className={styles.cardTitle}>{title}</h3>
       <p className={styles.cardDescription}>{description}</p>
+      <span>Get 30% off from your subscription during the first two months* with the promo code EARLYBIRD! * Limited to the first 100 customers.</span>
       <p className={styles.cardFooter}>
-        <a href={link}>Get my box for {price}!</a>
+        <a href={link}>Get my box for <span>{price}</span> <b>{sale}</b></a>
       </p>
-      
     </div>
   );
 
@@ -22,12 +22,12 @@ function HowTo() {
       <p>Choose the plan that fits your family's needs and schedule:</p>
       <ul>
         <li>
-          <Plan title="Monthly" description="Perfect for trying out our service. Receive a curated selection of 8-10 toys every month." price="$20.90/month" link="https://buy.stripe.com/aEU9Doe963CobZuaEH" />
+          <Plan title="Weekly" description="For ultimate convenience and variety. Receive weekly 8-10 toy deliveries tailored to your preferences." price="$34.99/month" sale="$24.49/month" link="https://buy.stripe.com/bIY02Od527SE5B67sy" />
         </li>
         <li>
-          <Plan title="Fortnightly" description="Ideal for ongoing toy rotation. Enjoy a variety of 8-10 toys delivered fortnightly." price="$34.90/month" link="https://buy.stripe.com/aEUcPAaWUeh2aVq3cg" /></li>
+          <Plan title="Fortnightly" description="Ideal for ongoing toy rotation. Enjoy a variety of 8-10 toys delivered fortnightly."  price="$49.99/month" sale="$34.99/month" link="https://buy.stripe.com/14kaHs2qodcYd3ydQX" /></li>
         <li>
-          <Plan title="Weekly" description="For ultimate convenience and variety. Receive weekly 8-10 toy deliveries tailored to your preferences." price="$54.90/month" link="https://buy.stripe.com/7sIg1M4ywgpa5B64gl" />
+          <Plan title="Monthly" description="Perfect for trying out our service. Receive a curated selection of 8-10 toys every month."   price="$84.99/month" sale="$59.49/month" link="https://buy.stripe.com/28obLw8OMb4Q8NiaEM" />
         </li>
         {/* <li>
           <Plan title="Subscribe" description="Sign up for our Toy Rotation service." price="" /> </li>

@@ -2,202 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 :root {
   --primary-color: #f2f1ec;
+  --secondary-color: #eec8b0;
+  --secondary-strong: #b65619;
   --dark-copy: rgb(73, 72, 72);
 }
 
-.AppNoScroll {
-  overflow: hidden;
-  max-height: 100vh;
-}
-h1 {
-  display: inline-flex;
-  flex-direction: column;
-  
-}
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-.hero {
-  display: inline-flex;
-  flex-direction: column;
-  width: 50%;
-  height: 28rem;
-  img {
-      margin: 0 auto;
-      width: 50%;
-      height: 100%;
-      object-fit: cover;
-  }
-   
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.logo {
-  display: flex;
-  font-size: 1.25rem;
-  color: rgb(246 237 227);
-  width: 18rem;
-  font-weight: 800;
-  letter-spacing: -2.5px;
-  font-size: 3rem;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: var(--primary-color);
-  padding: 50px 0;
-}
-
-.appHeader {
-  background-color: #f8a997;
-  max-width: 80%;
-  margin: 0 auto;
-  height: 30rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  padding: 2rem;
-  margin: 6rem auto;
-
-}
-
-.appHeader > div {
-   display: inline-flex;
-   flex-direction: column;
-   max-width: 100%;
- }
-
-.appheader h1 {
-  width: 50%;
-    max-width: 22rem;
-    margin-left: 2rem;
-    font-size: 2.5rem;
-}
-
- .appHeader span {
-  color: #fff;
-
-  max-width: 26rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+main, p, a {
+  font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 1.625rem;
-  font-family: Fredoka, sans-serif;
- }
-.appHeader .cta {
-  margin-top: 2rem;
-  display: inline-block;
-  max-width: fit-content;
+  font-style: normal;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    min-height: 18rem;
-    margin: 2rem auto;
-    line-height: 1.5;
-    color: var(--dark-copy);
-    font-size: 1.25rem;
-
-    h1 {
-      display: inline-flex;
-        width: 50%;
-        max-width: 40rem;
-        margin-left: 2rem;
-        font-size: 2.5rem;
-    }
-}
-
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f8a997;
-  padding: 4.5rem;
-}
-
-.cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  color: var(--dark-copy);
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 1rem 2rem;
-  border-radius: 4px;
+a {
   text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.cta:hover {
-  background-color: #f2f1ec;
-}
-
-@media (max-width: 768px) {
-
-  .appHeader {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
-
-    h1 {
-      max-width: 100%;
-      width: 34rem;
-    }
-
-    span {
-      max-width: 22rem;
-    }
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .logo {
-    width: 24rem;
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-
-  .footer section {
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  section {
-    width: calc(100% - 4rem)
-  }
+  color: var(--dark-copy);
 }

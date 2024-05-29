@@ -1,0 +1,14 @@
+.terms > div {
+    margin: 0 auto;
+    max-width: calc(100% - 16rem);
+    padding: 20px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .terms > div {
+    max-width: calc(100% - 2rem);
+  }
+}

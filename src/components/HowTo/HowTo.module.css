@@ -12,6 +12,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 16px;
   margin-bottom: 1rem;
+
+  span {
+      margin: 2rem 0;
+      font-style: italic;
+    }
 }
 
 .cardTitle {
@@ -43,5 +48,11 @@
       background-color: #d16e58;
       color: white;
     }
+
+    span {
+      text-decoration: line-through;
+      font-style: italic;
+    }
   }
+  
 }
