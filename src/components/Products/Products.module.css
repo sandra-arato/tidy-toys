@@ -1,0 +1,38 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.product {
+  position: relative;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.img {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.age, .period {
+  position: absolute;
+  font-size: 1rem;
+}
+
+.period {
+  top: -12px;
+  left: 0;
+}
+
+.age {
+  bottom: -4px;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -22,12 +22,28 @@ function HowTo() {
       <p>Choose the plan that fits your family's needs and schedule:</p>
       <ul>
         <li>
-          <Plan title="Weekly" description="For ultimate convenience and variety. Receive weekly 8-10 toy deliveries tailored to your preferences." price="$34.99/month" sale="$24.49/month" link="https://buy.stripe.com/bIY02Od527SE5B67sy" />
+          <Plan
+            title="Weekly"
+            description="For ultimate convenience and variety. Receive weekly 4-5 toys deliveries tailored to your preferences."
+            price="$34.99/month"
+            sale="$24.49/month"
+            link="https://buy.stripe.com/bIY02Od527SE5B67sy" />
         </li>
         <li>
-          <Plan title="Fortnightly" description="Ideal for ongoing toy rotation. Enjoy a variety of 8-10 toys delivered fortnightly."  price="$49.99/month" sale="$34.99/month" link="https://buy.stripe.com/14kaHs2qodcYd3ydQX" /></li>
+          <Plan
+            title="Fortnightly"
+            description="Ideal for ongoing toy rotation. Enjoy a variety of 8-10 toys delivered fortnightly."
+            price="$49.99/month"
+            sale="$34.99/month"
+            link="https://buy.stripe.com/14kaHs2qodcYd3ydQX" />
+        </li>
         <li>
-          <Plan title="Monthly" description="Perfect for trying out our service. Receive a curated selection of 8-10 toys every month."   price="$84.99/month" sale="$59.49/month" link="https://buy.stripe.com/28obLw8OMb4Q8NiaEM" />
+          <Plan
+            title="Monthly"
+            description="Perfect for trying out our service. Receive a curated selection of 8-10 toys every month."
+            price="$84.99/month"
+            sale="$59.49/month"
+            link="https://buy.stripe.com/28obLw8OMb4Q8NiaEM" />
         </li>
         {/* <li>
           <Plan title="Subscribe" description="Sign up for our Toy Rotation service." price="" /> </li>

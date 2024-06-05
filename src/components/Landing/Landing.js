@@ -10,6 +10,7 @@ import { useState } from "react";
 import EOIForm from "../EOIForm/EOIForm";
 import { Link } from 'react-router-dom';
 import Postcodes from '../Postcodes/Postcodes';
+import Products from '../Products/Products';
 
 function Landing() {
     const [contactFormOpen, setContactFormOpen] = useState(false);
@@ -36,6 +37,7 @@ function Landing() {
         <main>
           <About />
           <Mission />
+          <Products />
           <HowTo />
           <Postcodes openContactForm={openForm} />
           <Features />
