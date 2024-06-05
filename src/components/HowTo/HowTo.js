@@ -8,7 +8,7 @@ const Plan = ({ title, description, price, link, sale }) => {
       <p className={styles.cardDescription}>{description}</p>
       <span>Get 30% off from your subscription during the first two months* with the promo code EARLYBIRD! * Limited to the first 100 customers.</span>
       <p className={styles.cardFooter}>
-        <a href={link}>Get my box for <span>{price}</span> <b>{sale}</b></a>
+        <a href={link+'?prefilled_promo_code=EARLYBIRD'}>Get my box for <span>{price}</span> <b>{sale}</b></a>
       </p>
     </div>
   );

@@ -42,7 +42,7 @@
   width: 4rem;
   height: 4rem;
   fill: #fff;
-  background-color: #b2ae93;
+  background-color: var(--green);
   border-radius: 50%;
   margin-bottom: 1.5rem;
 }

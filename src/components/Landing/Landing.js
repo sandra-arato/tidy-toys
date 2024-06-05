@@ -9,6 +9,7 @@ import Plans from "../Plans/Plans";
 import { useState } from "react";
 import EOIForm from "../EOIForm/EOIForm";
 import { Link } from 'react-router-dom';
+import Postcodes from '../Postcodes/Postcodes';
 
 function Landing() {
     const [contactFormOpen, setContactFormOpen] = useState(false);
@@ -33,17 +34,16 @@ function Landing() {
             </div>
           </header>
         <main>
-            <About />
-            <Mission />
-            <HowTo />
-            <Features />  
+          <About />
+          <Mission />
+          <HowTo />
+          <Postcodes openContactForm={openForm} />
+          <Features />
         </main>
       </div>
 
 
       <footer className={styles.footer}>
-        
-        
         <section>
           <p>© 2024 Tidy Toys. All rights reserved.</p>
           <p><Link to="/terms">Terms and Conditions</Link></p>
