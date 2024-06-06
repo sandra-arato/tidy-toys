@@ -4,7 +4,7 @@
   --primary-color: #f2f1ec;
   --secondary-color: #eec8b0;
   --secondary-strong: #b65619;
-  --dark-copy: rgb(73, 72, 72);
+  --dark-copy: #494848;
 }
 
 .AppNoScroll {
@@ -154,6 +154,10 @@ section {
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+}
+
+svg {
+  margin-right: 1rem;
 }
 
 .cta:hover {
