@@ -1,0 +1,30 @@
+.alternatives {
+  margin-bottom: 2rem;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    a {
+      display: inline;
+    }
+    img, p {
+      display: block;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    p {
+      width: calc(100% - 220px);
+      margin: 0;
+    }
+    .light {
+      filter: grayscale(25%);
+    }
+    .grayish {
+      filter: grayscale(50%);
+    }
+  }
+
+}
