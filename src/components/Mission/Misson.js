@@ -30,7 +30,7 @@ function Mission() {
           </span>
         </li>
       </ul>
-        </section>
+      </section>
   );
 }
 

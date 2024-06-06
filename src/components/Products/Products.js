@@ -22,6 +22,7 @@ const Products = () => {
   return (
     <section>
       <h2>Example Boxes</h2>
+      <div className={styles.sale}>Launching on the 1st of July!</div>
       <p>Choose the box that suits your child's age and your family's needs.</p>
       <div className={styles.products}>
             <Product image={oneYearWeekly} title="1 year old +" period="weekly" />

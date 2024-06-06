@@ -30,6 +30,14 @@
   bottom: -4px;
   right: 0;
 }
+.sale {
+  color: var(--secondary-strong);
+  font-size: 1.75rem;
+  font-family: Nunito, sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  /* text-align: center; */
+}
 
 @media (max-width: 768px) {
   .products {
