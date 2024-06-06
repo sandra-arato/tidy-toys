@@ -26,5 +26,19 @@
       filter: grayscale(50%);
     }
   }
+}
+
+@media (max-width: 768px) {
+  .alternatives div {
+    flex-direction: column;
+
+    p, img {
+      width: 100%;
+      padding: 1rem 0;
+    }
+  }
+  .alternatives:not(:first-of-type) div {
+    flex-direction: column-reverse;
+  } 
 
 }
