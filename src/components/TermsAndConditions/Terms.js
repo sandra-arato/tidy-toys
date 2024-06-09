@@ -18,7 +18,7 @@ const Terms = () => {
         <ul>
           <li><strong>Subscription Plans</strong>: Customers can subscribe to weekly, fortnightly, or monthly plans. Each plan includes a curated selection of toys delivered to the customer's address.</li>
           <li><strong>Fees</strong>: Subscription fees vary based on the chosen plan and are charged in advance. Fees are non-refundable except as specified in our cancellation policy.</li>
-          <li><strong>Payment</strong>: Payments are processed via [payment methods]. By subscribing, you authorize us to charge your selected payment method for recurring fees.</li>
+          <li><strong>Payment</strong>: Payments are processed securely via <a href="https://stripe.com/au" target="_blank" rel="noreferrer">Stripe</a>. By subscribing, you authorize us to charge your selected payment method for recurring fees.</li>
         </ul>
 
         <h3>3. Delivery and Collection</h3>
