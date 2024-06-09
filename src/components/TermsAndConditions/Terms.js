@@ -7,11 +7,11 @@ const Terms = () => {
       <div>
         <h2><strong>Terms and Conditions</strong></h2>
 
-        <p>These terms and conditions ("Terms") govern your use of the Toy Rotation Rental Service provided by tidytoys.co. By accessing this website and using our services, you agree to be bound by these Terms. If you disagree with any part of these terms, please do not use our services.</p>
+        <p>These terms and conditions ("Terms") govern your use of the Tidy Toys provided by Tidy Toys Co. By accessing this website and using our services, you agree to be bound by these Terms. If you disagree with any part of these terms, please do not use our services.</p>
 
         <h3>1. Service Description</h3>
 
-        <p>Toy Rotation Rental Service provides a toy rental service where customers can choose from weekly, fortnightly, and monthly toy boxes. These boxes are delivered to the customer's address and collected at the end of the rental term. Our aim is to provide a variety of high-quality toys that foster learning and play.</p>
+        <p>Tidy Toys Co provides a toy rental service where customers can choose from weekly, fortnightly, and monthly toy boxes. These boxes are delivered to the customer's address and collected at the end of the rental term. Our aim is to provide a variety of high-quality toys that foster learning and play.</p>
 
         <h3>2. Subscription and Fees</h3>
 
@@ -61,7 +61,7 @@ const Terms = () => {
 
         <ul>
           <li><strong>Parental Responsibility</strong>: The safety of children using our toys is the responsibility of the parent/guardian. Parents/guardians must inspect each toy for safety and suitability before allowing independent play. Any toy that poses a potential risk should be removed from the child's access.</li>
-          <li><strong>Limitation of Liability</strong>: Toy Rotation Rental Service is not liable for any injuries, damages, or losses resulting from the use of rented toys. By accepting our terms, you acknowledge that the use of rented toys is at your own risk and discretion.</li>
+          <li><strong>Limitation of Liability</strong>: Tidy Toys Co is not liable for any injuries, damages, or losses resulting from the use of rented toys. By accepting our terms, you acknowledge that the use of rented toys is at your own risk and discretion.</li>
         </ul>
 
         <p>By using our service, you agree to abide by these Terms and Conditions. We reserve the right to amend these terms at any time without prior notice. It is your responsibility to review these terms periodically for changes. If you continue to use our services after any modifications to these terms, it constitutes your acceptance of those changes.</p>
