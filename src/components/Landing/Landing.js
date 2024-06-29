@@ -3,7 +3,6 @@ import logo from '../../hero.jpg';
 import styles from './Landing.module.css';
 import About from "../About/About";
 import Mission from "../Mission/Misson";
-import HowTo from "../HowTo/HowTo";
 import Features from "../Features/Features";
 import Plans from "../Plans/Plans";
 import { useState } from "react";
@@ -38,7 +37,6 @@ function Landing() {
           <About />
           <Mission />
           <Products />
-          <HowTo />
           <Postcodes openContactForm={openForm} />
           <Features />
         </main>
