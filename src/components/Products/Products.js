@@ -98,20 +98,20 @@ const Products = () => {
             <Plan
               title="Weekly"
               description="Explore endless play with a curated mix of fun and learning for kids aged 1 and up delivered weekly!"
-              price="$34.99"
-              sale="$24.49"
+              price="$25.65"
+              sale="$10.95"
               isWeekly
               images={[oneYearWeekly, twoYearWeekly, threeYearWeekly, fourYearWeekly]}
-              link="https://buy.stripe.com/bIY02Od527SE5B67sy" />
+              link="https://buy.stripe.com/3csbLw6GE4Gs2oU009" />
           </li>
           <li>
             <Plan
               title="Fortnightly"
               description="Explore endless play with a curated mix of fun and learning for kids aged 1 and up delivered fortnightly!"
-              price="$49.99"
-              sale="$34.99"
+              price="$29.98"
+              sale="$20.99"
               images={[oneYearFortnightly, twoYearFortnightly, threeYearFortnightly, fourYearFortnightly]}
-              link="https://buy.stripe.com/14kaHs2qodcYd3ydQX" />
+              link="https://buy.stripe.com/4gw9Do5CAfl6gfKfZ9" />
           </li>
         </ul>
       </div>
