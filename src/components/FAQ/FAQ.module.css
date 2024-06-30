@@ -1,0 +1,26 @@
+/* FAQ container */
+.faq-container {
+  width: 100%;
+}
+
+/* FAQ item */
+.faqItem {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* FAQ question */
+.faqQuestion {
+  background-color: #f5f5f5;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faqCurrent {
+  background-color: #f5f5f5;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid var(--secondary-color);
+  font-weight: 600;
+}
