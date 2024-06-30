@@ -18,10 +18,13 @@ function Features() {
       <div className={styles.alternatives}>
         <h3>Gift a subscription</h3>
         <div>
-          <p>Whether there is an upcoming birthday party, or a baby shower of a friend expecting their second or third baby, the a TidyToys subscription is a great gift for eco-conscious families! Contact us to for a unique payment link for store credit so that friends & family can chip in for store credit. </p>
+          <p>Whether there is an upcoming birthday party, or a baby shower of a friend expecting their second or third baby, the a TidyToys subscription is a great gift for eco-conscious families! Contact us to for a unique payment link for store credit so that friends & family can chip in for store credit.
+            <a href="https://buy.stripe.com/14k7vg8OMc8Ud3ydR2">Weekly Rotation Box for 10 weeks for <span> $149.95</span></a>
+            <a href="https://buy.stripe.com/7sIcPA5CA0qc8NidR3">Fortnightly Rotation Box for 10 weeks for <span> $149.95</span></a>
+          </p>
           <img src={birthday} alt="Gift a subscription" className={styles.light} />
         </div>
-        
+
       </div>
       <h2>Why Choose Tidy Toys</h2>
       <ol>
