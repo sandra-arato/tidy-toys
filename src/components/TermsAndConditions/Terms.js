@@ -11,22 +11,25 @@ const Terms = () => {
 
         <h3>1. Service Description</h3>
 
-        <p>Tidy Toys Co provides a toy rental service where customers can choose from weekly, fortnightly, and monthly toy boxes. These boxes are delivered to the customer's address and collected at the end of the rental term. Our aim is to provide a variety of high-quality toys that foster learning and play.</p>
+        <p>Tidy Toys Co provides a toy rental service where customers can choose from weekly and fortnightly toy boxes. These boxes are delivered to the customer's address and collected at the end of the rental term. Our aim is to provide a variety of high-quality toys that foster learning and play.</p>
 
         <h3>2. Subscription and Fees</h3>
 
         <ul>
-          <li><strong>Subscription Plans</strong>: Customers can subscribe to weekly, fortnightly, or monthly plans. Each plan includes a curated selection of toys delivered to the customer's address.</li>
+          <li><strong>Subscription Plans</strong>: Customers can subscribe to weekly or fortnightly plans. Each plan includes a curated selection of toys delivered to the customer's address.</li>
           <li><strong>Fees</strong>: Subscription fees vary based on the chosen plan and are charged in advance. Fees are non-refundable except as specified in our cancellation policy.</li>
           <li><strong>Payment</strong>: Payments are processed securely via <a href="https://stripe.com/au" target="_blank" rel="noreferrer">Stripe</a>. By subscribing, you authorize us to charge your selected payment method for recurring fees.</li>
+          <li><strong>Cut-off Date</strong>: Subscription cut-off date is each Tuesday 12:00pm AEST time (Brisbane).</li>
+          <li><strong>Time of Charging</strong>: Subscription fees will be charged to your selected payment method withing 24 hours of the Cut-off Date.</li>
         </ul>
 
         <h3>3. Delivery and Collection</h3>
 
         <ul>
           <li><strong>Delivery</strong>: Toy boxes will be delivered to the customer's specified address at the beginning of each rental term.</li>
+          <li><strong>Delivery Time</strong>: Toy boxes will be delivered to the customer's specified address at the beginning of each rental term - which will be either Friday evening or Saturday morning based on the delivery address. Tidy Toys Co reserves the right to change the start of the rental term from the usual Friday evening to Saturday morning and vice versa based on delivery schedule.</li>
           <li><strong>Collection</strong>: Toy boxes will be collected at the end of the rental term. Customers must ensure that all toys and packaging are returned in good condition.</li>
-          <li><strong>Missed Collections</strong>: If a collection is missed, the customer may incur additional fees.</li>
+          <li><strong>Missed Collections</strong>: If a collection is missed, the customer incurs additional fees. A weekly surcharge of $25 will be applied for every week the customer fails to return the box.</li>
         </ul>
 
         <h3>4. Use and Care of Toys</h3>
