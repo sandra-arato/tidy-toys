@@ -1,7 +1,5 @@
 .postcodes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block;
 
   ul, li {
     list-style-type: none;
