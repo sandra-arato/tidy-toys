@@ -5,3 +5,12 @@
   font-style: normal;
   color: var(--secondary-strong);
 }
+
+.brand {
+  display: inline-block;
+  aspect-ratio: auto;
+  filter: grayscale(88%) brightness(80%) hue-rotate(58deg) saturate(180%);
+  opacity: 0.4;
+  height:36px;
+  padding: 0 0.5rem;
+}
