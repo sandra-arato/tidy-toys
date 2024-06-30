@@ -9,15 +9,18 @@
   --button-size: 2rem;
 
   .caption {
+    display: inline-flex;
     position: absolute;
     font-weight: 400;
     font-size: 0.875rem;
     font-style: italic;
     display: block;
     text-align: center;
-    width: 100%;
+    margin: 0 auto;
+    bottom: 0.75rem;
     z-index: 1000;
-    bottom: -0.25rem;
+    text-align: center;
+    width: 100%;
   }
 
 
@@ -42,6 +45,7 @@
     border-radius: 50%;
     border: none;
     color: var(--secondary-strong);
+    z-index: 1001;
     
     &.prevButton {
       right: 0.5rem;
@@ -95,15 +99,6 @@
   margin-bottom: 1rem;
   margin-top: 1.25rem;
 
-  span {
-    display: block;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    padding: 0 0 1rem 0;
-    margin: 0;
-    color: #fff;
-  }
 
   .productHeader {
     background: var(--secondary-color);
@@ -148,6 +143,17 @@
   font-weight: 400;
   padding: 1.5rem 0 0 0;
   line-height: 0.875em;
+
+  span {
+    display: block;
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    color: #fff;
+    text-transform: none;
+    font-family: 'Nunito', sans-serif;
+  }
 }
 
 .cardDescription {
@@ -158,28 +164,62 @@
 }
 
 .cardFooter {
+  flex-direction: column;
   font-size: 18px;
   color: #d16e58;
   font-weight: bold;
   display: flex;
+  padding: 0 0.75rem;
+  margin: 0;
+
+  p {
+    padding: 0;
+    margin: 0;
+    color: var(--green);
+    text-decoration: line-through;
+    text-align: center;
+    line-height: 1.5rem;
+  
+    span {
+      position: relative;
+      top: -2px;
+      display: inline-block;
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      text-decoration: line-through;
+      align-self: top;
+    }
+  }
 
   a {
     color: #d16e58;
     text-decoration: none;
     margin-right: auto;
-    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
     border: 1px solid #d16e58;
+    padding: 0.5rem 1rem;
+    width: calc(100% - 2rem);
+    text-align: center;
 
     &:hover {
       background-color: #d16e58;
       color: white;
     }
 
+  }
+  h2 {
+    text-align: center;
+    margin: 0 0 1rem 0;
     span {
-      text-decoration: line-through;
-      font-style: italic;
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: #d16e58;
+      margin: 0;
+      padding: 0; 
     }
   }
+  
 
 }
 @media (max-width: 768px) {
@@ -200,7 +240,7 @@
     --button-size: 4rem;
     .caption {
       font-size: 1.25rem;
-      bottom: 0.75rem;
+      bottom: 1.5rem;
     }
   }
 }

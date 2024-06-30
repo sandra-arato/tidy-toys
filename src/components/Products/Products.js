@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import oneYearWeekly from '../../resources/1weekly.png';
 import twoYearWeekly from '../../resources/2weekly.png';
 import threeYearWeekly from '../../resources/3weekly.png';
@@ -35,17 +35,19 @@ const fortnightlyFeatures = [
 ]
 
 const Plan = ({ title, description, price, link, sale, images, isWeekly }) => {
+  const per = useMemo(() => isWeekly ? <span>per week</span> : <span>per fortnight</span>, [isWeekly]);
   return (
     <div className={styles.card}>
       <div className={isWeekly ? styles.productHeader : styles.productHeader+ ' ' + styles.green}>
-        <h3 className={styles.cardTitle}>{title}</h3>
-        <span>package</span>
+        <h3 className={styles.cardTitle}>{title}<span>package</span></h3>
       </div>
       <Product images={images} />
       <p className={styles.cardDescription}>{description}</p>
       <Features features={isWeekly ? weeklyFeatures: fortnightlyFeatures} />
       <p className={styles.cardFooter}>
-        <a href={link+'?prefilled_promo_code=EARLYBIRD'}>Get my box for <span>{price}</span> <b>{sale}</b></a>
+        <p>{price} {per}</p>
+        <h2>{sale}{per}</h2>
+        <a href={link+'?prefilled_promo_code=EARLYBIRD'}>Get my box</a>
       </p>
     </div>
   );
@@ -71,6 +73,7 @@ const Product = ({ images }) => {
   }
   return (
     <div className={styles.product}>
+      <span className={styles.caption}>{`${current+1}yo+ box example`}</span>
 
       <button type="button" className={styles.prevButton} onClick={handlePrev}>ᐊ</button>
       {images.map((image, index) => {
@@ -79,7 +82,6 @@ const Product = ({ images }) => {
         )
       })}
       <button type="button" className={styles.nextButton} onClick={handleNext}>ᐅ</button>
-      <span className={styles.caption}>{`${current+1}yo+ box example`}</span>
   </div>);
 }
 
@@ -96,8 +98,8 @@ const Products = () => {
             <Plan
               title="Weekly"
               description="Explore endless play with a curated mix of fun and learning for kids aged 1 and up delivered weekly!"
-              price="$34.99/month"
-              sale="$24.49/month"
+              price="$34.99"
+              sale="$24.49"
               isWeekly
               images={[oneYearWeekly, twoYearWeekly, threeYearWeekly, fourYearWeekly]}
               link="https://buy.stripe.com/bIY02Od527SE5B67sy" />
@@ -106,8 +108,8 @@ const Products = () => {
             <Plan
               title="Fortnightly"
               description="Explore endless play with a curated mix of fun and learning for kids aged 1 and up delivered fortnightly!"
-              price="$49.99/month"
-              sale="$34.99/month"
+              price="$49.99"
+              sale="$34.99"
               images={[oneYearFortnightly, twoYearFortnightly, threeYearFortnightly, fourYearFortnightly]}
               link="https://buy.stripe.com/14kaHs2qodcYd3ydQX" />
           </li>
