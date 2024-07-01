@@ -98,7 +98,7 @@ const Products = () => {
             <Plan
               title="Weekly"
               description="Explore endless play with a curated mix of fun and learning for kids aged 1 and up delivered weekly!"
-              price="$25.65"
+              price="$15.65"
               sale="$10.95"
               isWeekly
               images={[oneYearWeekly, twoYearWeekly, threeYearWeekly, fourYearWeekly]}
