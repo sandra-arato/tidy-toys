@@ -36,6 +36,11 @@ const fortnightlyFeatures = [
 
 const Plan = ({ title, description, price, link, sale, images, isWeekly }) => {
   const per = useMemo(() => isWeekly ? <span>per week</span> : <span>per fortnight</span>, [isWeekly]);
+  const track = () => {
+    if (window.gtag) {
+      window.gtag('event', 'conversion', { 'send_to': 'AW-1000415413/aX7wCMW4878ZELXBhN0D', 'value': parseFloat(sale), 'currency': 'AUD' })
+    }
+  }
   return (
     <div className={styles.card}>
       <div className={isWeekly ? styles.productHeader : styles.productHeader+ ' ' + styles.green}>
@@ -47,7 +52,7 @@ const Plan = ({ title, description, price, link, sale, images, isWeekly }) => {
       <p className={styles.cardFooter}>
         <p>{price} {per}</p>
         <h2>{sale}{per}</h2>
-        <a href={link+'?prefilled_promo_code=EARLYBIRD'}>Get my box</a>
+        <a href={link+'?prefilled_promo_code=EARLYBIRD'} onClick={track}>Get my box</a>
       </p>
     </div>
   );
